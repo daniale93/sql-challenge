@@ -44,7 +44,7 @@ WHERE dept_name = 'Sales';
 
 
 SELECT employees.emp_no, employees.last_name, employees.first_name, departments.dept_name
-FROM employees
+FROM employees	
 JOIN dept_emp on dept_emp.emp_no = employees.emp_no
 JOIN departments on departments.dept_no = dept_emp.dept_no
 WHERE dept_name = 'Sales' OR dept_name = 'Development';
